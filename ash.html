@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aap Ki DUkaaN</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            /* background-image: https: //bugatti.imgix.net/67fd1191e7036b2ee3b81ecb/If you enjoy our web then visit again.svg.svg?auto=format; */
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* --seach bar-- */
+        #oops {
+            border: 2px solid rgb(81, 201, 240);
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 8px;
+            width: 300px;
+            cursor: pointer;
+        }
+
+        #oops input {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        #span {
+            font-size: 50px;
+        }
+
+        /* ------side bar-- */
+
+
+        /* Menu items */
+        .menu-content a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .menu-content a:hover {
+            background-color: #eee;
+        }
+
+        /* Show dropdown when hovering */
+        .menu:hover .menu-content {
+            display: block;
+        }
+
+
+        /* ---------------- NAVBAR ---------------- */
+        .navbar {
+            width: 100%;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #000;
+            border-bottom: 1px solid #f10c0c;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        .navbar h2 {
+            color: #d10000;
+            letter-spacing: 3px;
+        }
+
+        .navbar a {
+            color: #eee;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .poster {
+            margin-top: 120px;
+            text-align: center;
+        }
+
+        .poster img {
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .poster p {
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        /* ---------------- PRODUCT GRID ---------------- */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        .product-card {
+            background: #111;
+            padding: 15px;
+            border-radius: 12px;
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.04);
+            border-color: #d10000;
+            box-shadow: 0px 0px 10px #d10000;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .product-card h4 {
+            color: #d10000;
+        }
+
+        .product-card button {
+            width: 100%;
+            padding: 10px;
+            background: #d10000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 5px;
+            cursor: pointer;
+        }
+
+        /* ---------------- FOOTER ---------------- */
+        footer {
+            background: #090909;
+            padding: 20px;
+            text-align: center;
+            color: #888;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h2>AAP KI DUKAAN</h2>
+        <div id="oops">
+            <input type="text" placeholder="Search here...">
+            <span>🔍</span>
+        </div>
+        <div>
+            <a href="https://www.flipkart.com/">Home</a>
+            <a href="https://www.flipkart.com/all-categories/pr?sid=search.flipkart.com">Categories</a>
+            <a href="https://www.flipkart.com/hi/">Trending</a>
+
+        </div>
+    </div>
+    <!--  POSTER -->
+    <div class="poster">
+        <img src="Gemini_Generated_Image_gxo00qgxo00qgxo0.png">
+        <i>
+            <p><a href="video.html"><U>HeRe YOu Will gEt What You wAnt..</U>.</a></p>
+        </i>
+    </div>
+
+    <!-- PRODUCT LIST -->
+    <section class="products">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img
+                src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRBJ7PG0cjIgJ2Xco_-0aVqOx7unVVvf4hqnoIZDIgvW_AdI8FqloE179yt7fYm4xak7M15uv8LSs_M2T86MQh7aJKS1ZIgMfIp9w1wKOP-O0IVBpgcGKSeItA">
+            <p>Mobile Phone (New Model)</p>
+            <a href="#">Know More..</a>
+            <h4>₹31,999</h4>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL2VwAb0yEawKKO0XjZGs_sU2eyzLjUzoc-g&s">
+            <p>Gaming Laptop (New Model)</p>
+            <a href="#">Know More..</a>
+            <h4>₹69,999</h4>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtk4jNahzxQ5W2Brur-o0Hp2ebqaR0ADLxQ&s">
+            <p>JEE Exam Books</p>
+            <a href="#">Know More..</a>
+            <h4>₹1,999</h4>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKNAhRzE16qCAXSMbwfQl-ogoe_QiUPApdYA&s">
+            <p>Men's Wear Full Dress</p>
+            <a href="#">Know More..</a>
+            <h4>₹3,999</h4>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="https://m.media-amazon.com/images/I/81U6-9Mx2bL._AC_UF1000,1000_QL80_.jpg">
+            <p>Wall Wallpapers & Designs</p>
+            <a href="#">Know More..</a>
+            <h4>₹6,999</h4>
+            <button>Add to Cart</button>
+        </div>
+        <!-- produ6 -->
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQursw9g8CzqmxsCMbEoSFPuMJiQTA9ssOPlQ&s">
+            <p>Ladder & Rope </p>
+            <a
+                href="https://www.flipkart.com/homecute-ninja-rope-ladder-kids-physical-activity-outdoor-indoor-swing-set/p/itm739ecfda0419b">Know
+                More..</a>
+            <h4>₹699</h4>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfpvaI24rMOaRPEH6jbNYoii5tsDtxSVXBCA&s">
+            <p>Wall Wallpapers & Designs</p>
+            <a
+                href="https://www.flipkart.com/hyperlocal-preview-page?marketplace=HYPERLOCAL&originalUrl=%2Fflipkart-minutes-store%3Fmarketplace%3DHYPERLOCAL%26fm%3Dneo%252Fmerchandising%26iid%3DM_9126dff3-3fda-486e-adae-8356011bc8b5_1_X1NCR146KC29_MC.HPVQFYHAHC9Q%26cid%3DHPVQFYHAHC9Q">
+                <h4> MORE...</h4>
+            </a>
+
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+
+    <div>
+        <img src="https://bugatti.imgix.net/67fd1191e7036b2ee3b81ecb/If you enjoy our web then visit again.svg.svg?auto=format"
+            style="width:100%; margin-top:30px;">
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 AAP KI DUKAAN P.V.T | All Rights Reserved.
+    </footer>
+
+</body>
+
+</html>
